@@ -1,0 +1,15 @@
+:host{
+
+  .drawer-panel{
+    width: 600px;
+    padding: 5px 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    //bottom: 0;
+    background: white;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 1px 1px 3px 1px #000;
+  }
+}

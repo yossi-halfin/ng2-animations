@@ -1,0 +1,27 @@
+<div>
+  <button routerLink="/home/new" type="button" class="btn btn-primary">New User</button>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr app-row *ngFor="let user of users; let i=index" [index]="i" [appRow]="user"></tr>
+  </table>
+
+  <div class="well">
+    <ul>
+      <li *ngFor="let event of events">
+        animation callback: {{event | json}}
+      </li>
+    </ul>
+
+  </div>
+  <router-outlet></router-outlet>
+
+</div>

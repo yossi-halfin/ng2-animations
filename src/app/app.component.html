@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/">ngAnim</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/home">Users</a></li>
+      <li routerLinkActive="active"><a routerLink="/secondary">Widgets</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
